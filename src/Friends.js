@@ -1,3 +1,4 @@
+import Button from "./Button";
 export default function Friends({ friend }) {
   return (
     <li>
@@ -17,6 +18,8 @@ export default function Friends({ friend }) {
         </p>
       )}
       {friend.balance === 0 && <p> {friend.name} and you are even</p>}
+
+      <Button>Select</Button>
     </li>
   );
 }

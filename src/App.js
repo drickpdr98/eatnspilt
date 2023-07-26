@@ -1,4 +1,7 @@
 import ListOfFriends from "./ListOfFriends";
+import AddFriend from "./AddFriend";
+import Button from "./Button";
+import SplitBill from "./SplitBill";
 
 const initialFriends = [
   {
@@ -26,6 +29,9 @@ function App() {
     <div className="app">
       <div className="sidebar">
         <ListOfFriends friends={initialFriends} />
+        <AddFriend />
+        <Button>Add Friend</Button>
+        <SplitBill />
       </div>
     </div>
   );
